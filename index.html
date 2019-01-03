@@ -28,7 +28,7 @@
     <div class="pages-nav__item"><a href="https://github.com/neelkirit/Resume/blob/master/Resume.pdf"
                                     target="_blank"><strong>RESUME</strong></a></div>
 
-    <div class="pages-nav__item"><a class="link link--page" href="#page-custom">Repos</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-custom">Places</a></div>
     <div class="pages-nav__item"><a class="link link--page" href="#page-training">GDG Rochester</a></div>
     <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#india">India</a></div>
     <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#europe">Europe
@@ -129,15 +129,9 @@
     </div>
     <div class="page" id="page-custom">
         <header class="bp-header cf">
-            <!--<h1 class="bp-header__title">Customization &amp; Settings</h1>-->
-            <!--<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a-->
-                    <!--href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>-->
-            <!--<p class="info">-->
-                <!--"You have to make a conscious decision to change for your own well-being, that of your family and your-->
-                <!--country." &mdash;Bill Clinton-->
-            <!--</p>-->
+            <h1 class="bp-header__title">PLACES I HAVE BEEN TO</h1> <br>
+            <div id="map" style="height:70vh;"></div>
         </header>
-        <!--<img class="poster" src="images/4.jpg" alt="img04"/>-->
     </div>
     <div class="page" id="page-training">
         <header class="bp-header cf">
@@ -192,6 +186,113 @@
 <button class="menu-button"><span>Menu</span></button>
 <script src="js/classie.js"></script>
 <script src="js/main.js"></script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var frankfurt = {lat: 50.110924, lng: 8.682127};
+        var hockenhiem = {lat: 49.319600, lng: 8.550140};
+        var heidelberg = {lat: 49.398750, lng: 8.672434};
+        var munich = {lat: 48.135124, lng: 11.581981};
+        var fussen = {lat: 47.569630, lng: 10.700420};
+        var dachau = {lat: 48.262997, lng: 11.433902};
+
+        var amsterdam = {lat: 52.370216, lng: 4.895168};
+        var zaandam = {lat: 52.438671, lng: 4.825480};
+
+        var paris = {lat: 48.856613, lng: 2.352222};
+
+        var morocco = {lat: 31.791702, lng: -7.092620};
+
+        var rochester = {lat: 43.156578, lng: -77.608849};
+        var new_york = {lat: 40.712776, lng: -74.005974};
+
+        var agra = {lat: 27.176670, lng: 78.008072};
+        var new_delhi = {lat: 28.613939, lng: 77.209023};
+        var bangalore = {lat: 12.971599, lng: 77.594566};
+        var patna = {lat: 25.594095, lng: 85.137566};
+        var kolkata = {lat: 22.572645, lng: 88.363892};
+        var gangtok = {lat: 27.338936, lng: 88.606506};
+        var shillong = {lat: 25.576230, lng: 91.882860};
+        var munnar = {lat: 10.088933, lng: 77.059525};
+        var chennai = {lat: 13.082680, lng: 80.270721};
+        var ooty = {lat: 11.406414, lng: 76.693245};
+        var coonoor = {lat: 11.343730, lng: 76.793854};
+        var jaipur = {lat: 26.912434, lng: 75.787270};
+        var varanasi = {lat: 25.317644, lng: 82.973915};
+        var mumbai = {lat: 19.075983, lng: 72.877655};
+        var guahati = {lat: 26.140289, lng: 91.791862};
+        var bhubaneswar = {lat: 20.272610, lng: 85.833122};
+        var tata = {lat: 22.804565, lng: 86.202873};
+        var bokaro = {lat: 23.669296, lng: 86.151115};
+        var bodh_gaya = {lat: 24.706169, lng: 84.989464};
+        var nalanda = {lat: 25.262182, lng: 85.478806};
+        var rajgir = {lat: 25.031900, lng: 85.416397};
+        var nepal = {lat: 27.717245, lng: 85.323959};
+        var haridwar = {lat: 29.945690, lng: 78.164246};
+        var siliguri = {lat: 26.7271000, lng: 88.395287};
+        var nathula = {lat: 27.387383, lng: 88.830284};
+        var cherrapunji = {lat: 25.283796, lng: 91.719360};
+
+
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 3, center: morocco});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: frankfurt, map: map});
+        var marker = new google.maps.Marker({position: hockenhiem, map: map});
+        var marker = new google.maps.Marker({position: heidelberg, map: map});
+        var marker = new google.maps.Marker({position: munich, map: map});
+        var marker = new google.maps.Marker({position: fussen, map: map});
+        var marker = new google.maps.Marker({position: dachau, map: map});
+
+        var marker = new google.maps.Marker({position: amsterdam, map: map});
+        var marker = new google.maps.Marker({position: zaandam, map: map});
+
+        var marker = new google.maps.Marker({position: paris, map: map});
+
+        var marker = new google.maps.Marker({position: rochester, map: map});
+        var marker = new google.maps.Marker({position: new_york, map: map});
+
+        var marker = new google.maps.Marker({position: agra, map: map});
+        var marker = new google.maps.Marker({position: new_delhi, map: map});
+        var marker = new google.maps.Marker({position: bangalore, map: map});
+        var marker = new google.maps.Marker({position: patna, map: map});
+        var marker = new google.maps.Marker({position: kolkata, map: map});
+        var marker = new google.maps.Marker({position: gangtok, map: map});
+        var marker = new google.maps.Marker({position: shillong, map: map});
+        var marker = new google.maps.Marker({position: munnar, map: map});
+        var marker = new google.maps.Marker({position: munnar, map: map});
+        var marker = new google.maps.Marker({position: chennai, map: map});
+        var marker = new google.maps.Marker({position: ooty, map: map});
+        var marker = new google.maps.Marker({position: coonoor, map: map});
+        var marker = new google.maps.Marker({position: jaipur, map: map});
+        var marker = new google.maps.Marker({position: varanasi, map: map});
+        var marker = new google.maps.Marker({position: mumbai, map: map});
+        var marker = new google.maps.Marker({position: guahati, map: map});
+        var marker = new google.maps.Marker({position: bhubaneswar, map: map});
+        var marker = new google.maps.Marker({position: tata, map: map});
+        var marker = new google.maps.Marker({position: bokaro, map: map});
+        var marker = new google.maps.Marker({position: bodh_gaya, map: map});
+        var marker = new google.maps.Marker({position: nalanda, map: map});
+        var marker = new google.maps.Marker({position: rajgir, map: map});
+        var marker = new google.maps.Marker({position: nepal, map: map});
+        var marker = new google.maps.Marker({position: haridwar, map: map});
+        var marker = new google.maps.Marker({position: siliguri, map: map});
+        var marker = new google.maps.Marker({position: nathula, map: map});
+        var marker = new google.maps.Marker({position: cherrapunji, map: map});
+
+
+    }
+</script>
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxK426PV-Zf3_26EgVYdBDJd8hrHob30&callback=initMap">
+</script>
 </body>
 
 </html>
