@@ -233,12 +233,17 @@
         var siliguri = {lat: 26.7271000, lng: 88.395287};
         var nathula = {lat: 27.387383, lng: 88.830284};
         var cherrapunji = {lat: 25.283796, lng: 91.719360};
+        var toronto = {lat: 43.6532, lng: -79.3832};
+        var miami = {lat: 25.7617, lng: -80.1918};
+        var boulder = {lat: 40.0150, lng: -105.2705};
+        var denver = {lat: 39.7392, lng: -104.9903};
+        var sanfrancisco = {lat: 37.7749, lng: -122.4194};
 
 
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {
-                zoom: 3, center: morocco,
+                zoom: 2, center: morocco,
                 styles: [{
                     "featureType": "all",
                     "elementType": "labels.text.fill",
@@ -294,7 +299,7 @@
                 }]
 
             });
-        // The marker, positioned at Uluru
+
         var marker = new google.maps.Marker({position: frankfurt, map: map});
         var marker = new google.maps.Marker({position: hockenhiem, map: map});
         var marker = new google.maps.Marker({position: heidelberg, map: map});
@@ -337,6 +342,12 @@
         var marker = new google.maps.Marker({position: siliguri, map: map});
         var marker = new google.maps.Marker({position: nathula, map: map});
         var marker = new google.maps.Marker({position: cherrapunji, map: map});
+        var marker = new google.maps.Marker({position: cherrapunji, map: map});
+        var marker = new google.maps.Marker({position: toronto, map: map});
+        var marker = new google.maps.Marker({position: miami, map: map});
+        var marker = new google.maps.Marker({position: denver, map: map});
+        var marker = new google.maps.Marker({position: boulder, map: map});
+        var marker = new google.maps.Marker({position: sanfrancisco, map: map});
 
 
     }
@@ -347,7 +358,7 @@
 * The callback parameter executes the initMap() function
 -->
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxK426PV-Zf3_26EgVYdBDJd8hrHob30&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDst-7Yk-7YZjmUrDC8ZnPmFJvobYdQgzU&callback=initMap">
 </script>
 </body>
 
